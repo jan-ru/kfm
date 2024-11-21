@@ -134,3 +134,14 @@ bindEvents();
 
 // Render the table.
 renderTable();
+
+function loadContent(contentId) {
+  const contentMap = {
+    hdfdstk1: '<h2>Lineaire verbanden</h2><p>Content about lineaire verbanden.</p>',
+    hdfdstk2: '<h2>Exponentiële verbanden</h2><p>Content about exponentiële verbanden.</p>',
+  };
+
+  const contentContainer = document.querySelector('#main-content');
+  contentContainer.innerHTML = contentMap[contentId] || '<p>Content not found</p>';
+}
+
