@@ -6,7 +6,18 @@
     <title>HyperFormula demo</title>
     <script type="module" src="/src/main.ts"></script>  </head>
   <body>
-    <div class="example">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <a href="#" onclick="loadContent('Home')">Home</a>
+    <a href="#" onclick="loadContent('About')">About</a>
+    <a href="#" onclick="loadContent('Services')">Services</a>
+    <a href="#" onclick="loadContent('Contact')">Contact</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="example">
   <button id="run" class="run">
     Run calculations
   </button>
